@@ -1,0 +1,14 @@
+Revision history for html2dbk
+=============================
+
+0.02 Tue 21 March 2006
+----------------------
+
+  * (21 Mar 2006) tweaks
+  	- make the distribution be the html2dbk not the module name.
+  	- added a bit more documentation.
+
+0.01 Tue 21 March 2006
+----------------------
+
+  * (21 Mar 2006) initial checkin
