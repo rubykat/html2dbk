@@ -1,9 +1,6 @@
 TODO list for html2dbk
 ======================
-  2. add option for external XSLT stylesheet
-    Added:21/03/06, 17:59  Priority: medium
-
-  3. take the chapter title from the html/head/title element
-    Added:21/03/06, 18:34  Priority: medium
+  4. pass parameters to the stylesheet
+    Added:22/03/06, 16:00  Priority: medium
 
 

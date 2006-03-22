@@ -6,7 +6,7 @@ html2dbk - convert XHTML to DocBook.
 
 ==== VERSION ====
 
-This describes version ``0.02'' of html2dbk.
+This describes version ``0.03'' of html2dbk.
 
 
 ==== DESCRIPTION ====
@@ -16,17 +16,16 @@ XSLT and heuristics (as XSLT alone can't do everything).
 
 This script will convert "*filename*.html" into "*filename*.xml"
 
-This expects the input file to be correct XHTML -- there are other programs
-(such as html tidy) http://tidy.sourceforge.net/ which can correct files for
-you, this does not do that. (Note that if you use HTML Tidy, don't forget to
-set 'enclose-block-text' or any unenclosed text will dissappear.)
+By default, the input file is expected to be correct XML (there are other
+programs such as html tidy (http://tidy.sourceforge.net/) which can correct
+files for you; this does not do that). If you give the --html option then
+this will attempt to parse the file as HTML.
 
 Note also this is very simple; it doesn't deal with things like <div> or
 <span> which it has no way of guessing the meaning of. This does not merge
 multiple XHTML files into a single document, so this converts each XHTML
 file into a <chapter>, with each header being a section (sect1 to sect5).
-The first header is used for both the chapter title and the first section
-title.
+The <title> tag is used for the chapter title.
 
 There will likely to be validity errors, depending on how good the original
 HTML was. There may be broken links, <xref> elements that should be <link>s,

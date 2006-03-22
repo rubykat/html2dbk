@@ -2,7 +2,7 @@
 
 #########################
 
-use Test::More tests => 2;
+use Test::More tests => 6;
 use HTML::ToDocBook;
 
 #########################
@@ -82,6 +82,37 @@ $test_count++;
 $bn = 'test1';
 $result = $conv->convert(
 infile=>"tfiles/${bn}.html"
+);
+ok($result, "($test_count) converted ${bn}.html");
+
+# compare the files
+$result = compare("tfiles/good_${bn}.xml", "tfiles/${bn}.xml");
+ok($result, "($test_count) compare ${bn} matched");
+if ($result) {
+    unlink("tfiles/${bn}.xml");
+}
+
+$test_count++;
+$bn = 'test2';
+$result = $conv->convert(
+infile=>"tfiles/${bn}.html",
+html=>1,
+);
+ok($result, "($test_count) converted ${bn}.html");
+
+# compare the files
+$result = compare("tfiles/good_${bn}.xml", "tfiles/${bn}.xml");
+ok($result, "($test_count) compare ${bn} matched");
+if ($result) {
+    unlink("tfiles/${bn}.xml");
+}
+
+# external stylesheet
+$test_count++;
+$bn = 'test1';
+$result = $conv->convert(
+infile=>"tfiles/${bn}.html",
+stylesheet=>"tfiles/default_xslt.xml",
 );
 ok($result, "($test_count) converted ${bn}.html");
 

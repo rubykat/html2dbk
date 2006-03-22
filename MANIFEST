@@ -15,3 +15,6 @@ t/03_pod-coverage.t
 t/20tfiles.t
 tfiles/test1.html
 tfiles/good_test1.xml
+tfiles/test2.html
+tfiles/good_test2.xml
+tfiles/default_xslt.xml

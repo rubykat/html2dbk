@@ -1,6 +1,6 @@
 ---
 name: html2dbk
-version: 0.02
+version: 0.03
 author:
   - Kathryn Andersen
 abstract: Converts an XHTML file into DocBook.
@@ -20,5 +20,5 @@ build_requires:
 provides:
   HTML::ToDocBook:
     file: lib/HTML/ToDocBook.pm
-    version: 0.02
+    version: 0.03
 generated_by: Module::Build version 0.2611

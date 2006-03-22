@@ -10,6 +10,7 @@
 ^version.txt$
 ^old_version.txt$
 ^\.todo$
+^\.releases
 
 # distro files
 ^html2dbk-*
