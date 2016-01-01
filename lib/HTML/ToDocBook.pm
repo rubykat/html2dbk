@@ -12,7 +12,7 @@ This describes version B<0.03> of HTML::ToDocBook.
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.0301';
 
 =head1 SYNOPSIS
 
