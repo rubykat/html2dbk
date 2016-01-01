@@ -41,7 +41,7 @@
    "provides" : {
       "HTML::ToDocBook" : {
          "file" : "lib/HTML/ToDocBook.pm",
-         "version" : "0.03"
+         "version" : "0.0301"
       }
    },
    "release_status" : "stable",
@@ -52,5 +52,5 @@
          "url" : "git://github.com/rubykat/html2dbk.git"
       }
    },
-   "version" : "0.03"
+   "version" : "0.0301"
 }
