@@ -2,7 +2,7 @@
 \bRCS\b
 \bCVS\b
 ,v$
-^_darcs/
+^.git/
 ^\.boring$
 
 ^darcs_prebuild.pl$

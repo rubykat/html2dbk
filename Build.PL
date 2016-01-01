@@ -24,10 +24,12 @@ my $builder = Module::Build->new(
     },
 #    add_to_cleanup      => [ 'html2dbk-*' ],
     script_files => [qw(scripts/html2dbk)],
+    meta_add => {
+        resources  => {
+            repository  => 'git://github.com/rubykat/html2dbk.git',
+            homepage  => 'http://github.com/rubykat/html2dbk',
+        },
+    },
 );
 
 $builder->create_build_script();
-# create the Makefile.PL
-use Module::Build::Compat;
-print "creating Makefile.PL\n";
-Module::Build::Compat->create_makefile_pl('passthrough', $builder);

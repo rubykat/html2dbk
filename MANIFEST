@@ -3,7 +3,7 @@ Changes
 MANIFEST
 MANIFEST.SKIP
 META.yml # Will be created by "make dist"
-Makefile.PL # Will be created by "perl Build.PL"
+META.json # Will be created by "make dist"
 README
 TODO
 lib/HTML/ToDocBook.pm
@@ -18,3 +18,4 @@ tfiles/good_test1.xml
 tfiles/test2.html
 tfiles/good_test2.xml
 tfiles/default_xslt.xml
+META.json
